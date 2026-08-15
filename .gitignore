@@ -1,0 +1,10 @@
+node_modules/
+dist/
+src-tauri/target/
+release/
+.env
+*.key
+*.key.pub
+*.db
+*.db-shm
+*.db-wal
