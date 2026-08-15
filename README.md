@@ -70,17 +70,12 @@ npm run tauri build
 
 ## Current Windows release
 
-The verified `0.1.1` Windows artifacts are in `release/LinkSet-0.1.1`:
-
-- `LinkSet.exe` — standalone desktop application
-- `LinkSet_0.1.1_x64-setup.exe` — NSIS installer
-- `LinkSet_0.1.1_x64_en-US.msi` — MSI installer
+The current Windows release is [LinkSet v0.1.2](https://github.com/Feruzbek-coder/LinkSet/releases/tag/app-v0.1.2). It includes NSIS and MSI installers, updater signatures, and `latest.json`.
 
 Version `0.1.2` adds the signed Tauri updater and a **Settings → Updates** screen.
 GitHub tag pushes matching `app-v*` run `.github/workflows/release.yml`, which
 publishes NSIS/MSI installers, signatures, and `latest.json`. See
 `docs/UPDATER.md` for the one-time signing-secret setup and release procedure.
-- `SHA256SUMS.txt` — integrity hashes
 
 The application passes 16 Rust tests, strict Clippy checks, the frontend production build, dependency audit and a native Windows launch smoke test. These local artifacts are not yet Authenticode-signed; a trusted SETWELL code-signing certificate is required before public distribution.
 
