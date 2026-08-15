@@ -114,4 +114,4 @@ Safety tests verify that unknown tools and critical services are rejected and th
 
 ## MVP limitations
 
-Remaining production work includes broader hardware temperature support, historical per-process network byte accounting, notifications, startup-at-login management, rollback, privacy export/delete controls, Authenticode signing, a signed update channel, and clean Windows 10/11 VM certification. Auto-update remains disabled without signing infrastructure.
+Remaining production work includes broader hardware temperature support, historical per-process network byte accounting, notifications, startup-at-login management, rollback, privacy export/delete controls, Authenticode signing, and clean Windows 10/11 VM certification. Signed auto-update is enabled through GitHub Releases; public distribution still requires protecting the updater key and completing Windows signing and clean-VM release checks.
